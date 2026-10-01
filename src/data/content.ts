@@ -159,6 +159,6 @@ export const cases: CaseStudyData[] = [
 export const contact = {
   phone: { label: "+55 33 99808-1191", href: "https://wa.me/5533998081191" },
   // TODO: substituir pelos perfis reais (não estavam no Figma).
-  instagram: "https://www.instagram.com/",
-  linkedin: "https://www.linkedin.com/",
+  instagram: "https://www.instagram.com/publimiga",
+  linkedin: "https://www.linkedin.com/in/angelalellis",
 };
