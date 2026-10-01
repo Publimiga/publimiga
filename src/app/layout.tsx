@@ -17,7 +17,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Publimiga ​⭐",
+  title: "Publimiga",
   description:
     "Portfólio da Angela (publimiga): campanhas, redes sociais e branding. Pensar o impensável e transformar em realidade.",
   openGraph: {

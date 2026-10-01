@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { CaseStudyData } from "@/data/content";
 import { Badge, Star } from "./Badge";
 import { cn } from "./cn";
+import { ImageLightbox } from "./ImageLightbox";
 
 export function CaseStudy({ data, flip = false }: { data: CaseStudyData; flip?: boolean }) {
   const blocks = [
@@ -19,7 +20,11 @@ export function CaseStudy({ data, flip = false }: { data: CaseStudyData; flip?: 
         flip ? "lg:grid-cols-[1fr_587px]" : "lg:grid-cols-[587px_1fr]",
       )}
     >
-      <div className={cn("relative aspect-video overflow-hidden rounded-md bg-pink-soft", flip && "md:order-2")}>
+      <ImageLightbox
+        image={data.image}
+        alt={data.title}
+        className={cn("relative aspect-video overflow-hidden rounded-md bg-pink-soft", flip && "md:order-2")}
+      >
         <Image
           src={data.image}
           alt={data.title}
@@ -30,7 +35,7 @@ export function CaseStudy({ data, flip = false }: { data: CaseStudyData; flip?: 
         <Badge variant="label" className="absolute top-1.5 right-1.5">
           Imagem do case
         </Badge>
-      </div>
+      </ImageLightbox>
 
       <div className={cn(flip && "md:order-1")}>
         <div className="flex flex-wrap items-center gap-2">
