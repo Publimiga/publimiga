@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description:
     "Portfólio da Angela (publimiga): campanhas, redes sociais e branding. Pensar o impensável e transformar em realidade.",
   openGraph: {
-    title: "publimiga — Portfólio",
+    title: "Publimiga",
     description: "Campanhas, redes sociais e branding.",
     locale: "pt_BR",
     type: "website",
